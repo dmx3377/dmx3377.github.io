@@ -33,7 +33,7 @@ import { WORDS } from "./words.js";
          return; 
        } 
   
-       if (oldColor === "yellow" && color !== "green") { 
+       if (oldColor === "#bccc2b" && color !== "green") { 
          return; 
        } 
   
@@ -67,7 +67,7 @@ import { WORDS } from "./words.js";
    } 
   
    if (!WORDS.includes(guessString)) { 
-     toastr.error("Word not in list!"); 
+     toastr.error("Word not in dictionary!"); 
      return; 
    } 
   
@@ -89,7 +89,7 @@ import { WORDS } from "./words.js";
      //checking right letters 
      for (let j = 0; j < 5; j++) { 
        if (rightGuess[j] == currentGuess[i]) { 
-         letterColor[i] = "yellow"; 
+         letterColor[i] = "#bccc2b"; 
          rightGuess[j] = "#"; 
        } 
      } 
@@ -97,7 +97,7 @@ import { WORDS } from "./words.js";
   
    for (let i = 0; i < 5; i++) { 
      let box = row.children[i]; 
-     let delay = 250 * i; 
+     let delay = 275 * i; 
      setTimeout(() => { 
        //flip box 
        animateCSS(box, "flipInX"); 
