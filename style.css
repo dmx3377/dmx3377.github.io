@@ -1,15 +1,15 @@
 import url('https://dsans.davidstudios.uk/css2.css')
 
 body,html {
-  font-family: "DSans Regular", Arial, sans-serif;
+  font-family: 'DSans Regular', Segoe UI Arial, sans-serif;
 }
 
 h1 { 
-  font-family: "DSans Bold", Arial, sans-serif;
+  font-family: 'DSans Bold', Arial, sans-serif;
   text-align: center; 
  }
 
-.smalltext {
+.small-text {
   font-size: 0.5rem;
   justify-content: center;
 }
