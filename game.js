@@ -118,8 +118,7 @@ import { WORDS } from "./words.js";
   
      if (guessesRemaining === 0) { 
        toastr.error("You've run out of guesses! Game over!");
-       sleep(2.5)
-       toastr.info(`The right word was: "${rightGuessString}"`); 
+       toastr.info(`The word was: "${rightGuessString}"`); 
      } 
    } 
  } 
