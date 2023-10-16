@@ -1,4 +1,4 @@
-### DS Links Hub
+### Wordle clone
 Test for Github Pages.
 
-also used as a place to dump random videos.
+also a clone of the game Wordle 
