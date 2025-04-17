@@ -1,0 +1,10 @@
+dmx3377.github.io Privacy Policy
+================================================
+
+No data is collected from the use of dmx3377.github.io ("Website", or "the Website").
+
+No cookies or trackers are used in the Website, and as such no data about any individual, their machine or similar is collected by dmx3377.
+No data is transferred to any place from your use of the Website.
+
+The page is hosted by Github/Github Pages, which may use and/or collect data; you may get a copy of their Privacy Policy at:
+https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
