@@ -1,26 +1,39 @@
 <!DOCTYPE html> 
  <html lang="en"> 
  <head> 
+ <script>
+  const isAppleDevice = /iPhone|iPad|iPod|Macintosh/i.test(navigator.userAgent);
+  const isAlreadyOnApplePage = window.location.pathname === "/apple.html";
+
+  if (isAppleDevice && !isAlreadyOnApplePage) {
+    window.location.href = "/apple.html";
+  }
+</script>
+
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-     <title>DS File Portal</title> 
-     <link href="https://dsans.davidstudios.uk/css2.css" rel="stylesheet">
+     <meta name="description" content="dmx3377">
+     <meta name="keywords" content="dmx3377">
+     <meta name="author" content="David">
+     <title>dmx3377</title> 
+     <!-- <link href="https://dsans.davidstudios.uk/css2.css" rel="stylesheet"> -->
      <link rel="stylesheet" href="style.css"> 
      
  </head> 
  <body> 
-     <h1>DS File Portal</h1> 
+     <h1>Hi, I'm dmx3377</h1> 
 </br></br>
-     <h3>How does it work?</h3>
-     <p>Send a file to <a href="mailto:files@davidstudios.uk" target="_blank">this email</a> or DM me on any other platform (Twitter/𝕏, etc.).</p>
+     <h3>I'm a web and roblox developer.</h3>
+     <p>I am very cool</p>
+     <p class="emoji">😎</p> <!-- Google emoji looks cooler -->
 </br></br>
-<h3>So, a free way to store stuff?</h3>
-<p>Yup! And your file will be stored forever (unless you request to delete it)</p>
+<h3>So, you make stuff?</h3>
+<p>Yeah, pretty much.</p>
 </br></br>
-<h3>Can I truly store anything I want?</h3>
-<p>Not quite. We don't want any illegal stuff, or anything that will harass someone. All other files should be fine though.</p>
+<h3>Why is this website so... <i>basic</i>?</h3>
+<p>I just made this website, give me a break.</p>
 </br>
 
-  <p class="small-text">A DS project.</p>
+  <p class="small-text">(C) 2025 dmx3377. SOME LEGAL STUFF THAT HAS TO SHOW AT THE BOTTOM OF A PAGE. SOME LEGAL STUFF THAT HAS TO SHOW AT THE BOTTOM OF A PAGE.</p>
 </body> 
  </html>
