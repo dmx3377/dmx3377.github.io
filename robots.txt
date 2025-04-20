@@ -1,0 +1,5 @@
+user-agent: *
+disallow: /ai-please/privacy
+
+user-agent: *
+disallow: /ai-please/terms
