@@ -15,6 +15,46 @@
       margin: 0;
       padding: 0;
     }
+    .faq-container {
+  max-width: 600px; /* Adjust as needed */
+  margin: 20px auto;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden; /* Important for the slide-down animation */
+}
+
+.faq-question {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Optional hover effect */
+}
+
+.faq-question:hover {
+  background-color: #e0e0e0;
+}
+
+.faq-answer {
+  padding: 15px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  height: 0; /* Initially hidden */
+  overflow: hidden; /* Ensures content doesn't overflow when hidden */
+  transition: height 0.3s ease-in-out; /* The slide-down animation */
+}
+
+.faq-item.open .faq-answer {
+  height: auto; /* Expand to show content */
+}
     header {
       background: linear-gradient(270deg, #6366f1, #8b5cf6, #0e4eb5);
       background-size: 600% 600%;
@@ -61,6 +101,8 @@
     <p>Hi there, you might know me as a photographer, twitter argument maker, rail enthusiast, and more...</p>
   </header>
 
+  <img src="bus.jpg" id="bus_image" alt="">
+
   <main>
     <section>
       <h2>"I'm here about the pictures!"</h2>
@@ -97,8 +139,36 @@
     </section>
   </main>
 
+  <h3>FAQ:</h3>
+  <i>Everything you could ask to me are possibly answered here.</i>
+  <div class="faq-container">
+  <div class="faq-item">
+    <button class="faq-question">Q: Is it true you ever had a private account?</button>
+    <div class="faq-answer">A: Yes I did, in 2023. I then deleted it because barely nobody followed it, and I feel most of my content should be widely viewed as possible.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Q: Why don't you share your face?</button>
+    <div class="faq-answer">A: Put simply, <i>I look terrible.</i> Please don't ask to see my face because you will be ignored and possibly blocked.</div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Q: Why is this website in <i>train.html</i> and not the main index.html?</button>
+    <div class="faq-answer">A: index.html is taken for my.. coding side for now. I might change it into a 'central hub' in the future.</div>
+  </div>
+
+  </div>
+
   <footer>
    (C) 2025 dmx3377 · <a href="/privacy.txt">Privacy</a>
   </footer>
 </body>
+  <script>const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+  question.addEventListener('click', () => {
+    item.classList.toggle('open');
+  });
+});</script>
 </html>
