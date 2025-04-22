@@ -15,7 +15,19 @@
       margin: 0;
       padding: 0;
     }
-   
+   header {
+      background: linear-gradient(270deg, #6366f1, #8b5cf6, #07e659);
+      background-size: 600% 600%;
+      animation: gradientShift 10s ease infinite;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
     header h1 {
       margin: 0;
       font-family: 'DSans Regular', sans-serif;
@@ -33,13 +45,19 @@
       color: #1f2937;
       font-family: 'DSans Regular', sans-serif;
     }
-    footer {
-      background: #f3f4f6;
+    footer { 
+      background: #f3f4f6; 
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
-      color: #6b7280;
+      color: #3d3d3d;
     }
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
   </style>
 </head>
 <body>
@@ -48,7 +66,7 @@
     <p>Hi there, you might know me as a photographer, twitter argument maker, rail enthusiast, and more...</p>
   </header>
 
-  <img src="bus.jpg" id="bus_image" alt="">
+  <img src="bus.jpg" id="bus_image" alt="" class="center">
 
   <main>
     <section>
